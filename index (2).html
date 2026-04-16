@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CineMatch – Movie Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header>
+    <div class="logo">🎬 CineMatch</div>
+    <p class="tagline">Type a movie. Discover your next obsession.</p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <div class="search-box">
+        <input
+          type="text"
+          id="movieInput"
+          placeholder="e.g. Inception, The Godfather, Titanic…"
+          autocomplete="off"
+        />
+        <button id="recommendBtn">Recommend</button>
+      </div>
+      <p id="errorMsg" class="error hidden"></p>
+    </section>
+
+    <section id="resultsSection" class="results-section hidden">
+      <div class="results-header">
+        <span id="genreTag" class="genre-tag"></span>
+        <h2 id="resultsTitle"></h2>
+      </div>
+      <div id="movieGrid" class="movie-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with ❤️ for cinephiles everywhere</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
